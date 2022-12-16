@@ -1,0 +1,189 @@
+body,
+html {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+  height: 60%;
+  width: 100%;
+  transition: opacity 0.5s;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+.heading-2 {
+  display: none;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+  opacity: 0;
+  transition: opacity 2s;
+  height: 60%;
+  width: 100%;
+}
+
+.form-container.slide-out, .slide-out {
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+}
+
+.heading-title {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.heading-text {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 1.5em;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+.form-container-2 {
+  display: none;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 1.5em;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+#phoneForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 1rem;
+}
+
+#codeForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 1rem;
+}
+
+#phoneInput {
+  position: relative;
+  flex: 1;
+  width: 50%;
+  border: solid 2px #d9d9d9;
+  border-radius: 3px;
+  align-self: center;
+  padding: 7px;
+  height: 100%;
+}
+
+#codeInput {
+  position: relative;
+  flex: 1;
+  width: 50%;
+  border: solid 2px #d9d9d9;
+  border-radius: 3px;
+  align-self: center;
+  padding: 7px;
+  height: 100%;
+}
+
+#phoneLabel {
+  padding-inline-start: 10em;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.form-submit {
+  align-self: center;
+  background-color: #90E0EF;
+  border: none;
+  font-weight: bold;
+  border-radius: 0.4em;
+  padding: 1em 0em 1em 0em;
+  width: 24em;
+}
+
+.form-submit-2 {
+  align-self: center;
+  background-color: #90E0EF;
+  border: none;
+  font-weight: bold;
+  border-radius: 0.4em;
+  padding: 1em 0em 1em 0em;
+  width: 24em;
+}
+
+
+svg {
+  color: #90E0EF;
+}
+
+#phoneInput:focus {
+  outline: none;
+  border-color: black;
+}
+
+@media screen and (max-width: 820px) {
+  #phoneInput {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 595px) {
+  #phoneForm {
+    width: 75%;
+  }
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes slide-out {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+  }
+}
