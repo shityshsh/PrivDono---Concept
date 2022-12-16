@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 
 
 
-const client = require('twilio')("AC094ea7cbf428e173a2f5f8b9c7a6720a", "68be84362b82ba7d6f2b3c47699b89d1");
+const client = require('twilio')("insert account sid here", "insert accoutn token here");
 
 
 
